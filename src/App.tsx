@@ -3,9 +3,8 @@ import Swal from 'sweetalert2';
 import './style.css';
 
 export default function App() {
-  const input1 = [-4, 4, -3, 3];
-  const input2 = [3, -12, 9, 0, , -24, 16,0];
-  const input3 = [-1, 8, 5, -6, 7, - 3, 2];
+  const input1 = [3, -12, 9, 0, , -24, 16, 0];
+  const input2 = [-1, 8, 5, -6, 7, -3, 2];
 
   function reoderNumbers(unsortedNumbers) {
     const negative = unsortedNumbers.filter((num) => num < 0);
@@ -21,7 +20,6 @@ export default function App() {
   return (
     <div>
       <h1>Desafio 01</h1>
-
       <div>
         <p>
           Neste desafio você trabalhará com um conjunto de número de tamanho X.
@@ -42,16 +40,17 @@ export default function App() {
         </p>
       </div>
       <div>
-        <button onClick={() => reoderNumbers(input1)}>Entrada 1</button>
+        <button onClick={() => reoderNumbers(input1)}>
+          Entrada 1 - [3, -12, 9, 0, , -24, 16,0]
+        </button>
       </div>
       <br />
       <div>
-        <button onClick={() => reoderNumbers(input2)}>Entrada 2</button>
+        <button onClick={() => reoderNumbers(input2)}>
+          Entrada 2 [-1, 8, 5, -6, 7, -3, 2]
+        </button>
       </div>
       <br />
-      <div>
-        <button onClick={() => reoderNumbers(input3)}>Entrada 3</button>
-      </div>
     </div>
   );
 }
